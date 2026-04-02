@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakecity | Bakeries</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body data-page="bakeries">
+    <header class="site-header">
+      <div class="site-header-inner header-wireframe">
+        <nav class="site-nav desktop-nav nav-left">
+          <a href="custom.html">Custom</a>
+          <a href="premade.html">Pre-Made</a>
+        </nav>
+        <a class="brand-mark brand-center" href="index.html">
+          <span class="brand-name">Bakecity</span>
+        </a>
+        <nav class="site-nav desktop-nav nav-right">
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="login.html" class="nav-login">Login</a>
+        </nav>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <nav class="site-nav site-nav-mobile" id="mobile-nav">
+        <a href="custom.html">Custom</a>
+        <a href="premade.html">Pre-Made</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html" class="nav-login">Login</a>
+      </nav>
+    </header>
+
+    <main class="page-shell">
+      <section class="page-hero page-hero-wireframe">
+        <div class="page-hero-copy">
+          <span class="section-chip">Bakery showcase</span>
+          <h1>Meet the local bakeries</h1>
+          <p>Each bakery card includes how the bakery looks, where it is, how to contact it, and a short brand description so customers can choose with confidence.</p>
+        </div>
+      </section>
+
+      <section class="page-panel">
+        <div class="section-heading">
+          <div>
+            <span class="section-chip">Partner bakeries</span>
+            <h2>Showcasing the shops behind the pastries</h2>
+          </div>
+          <p>This page is intentionally card-based so it feels like a bakery directory while staying consistent with your box-heavy wireframes.</p>
+        </div>
+        <div class="bakeries-grid" id="bakery-showcase"></div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer" data-site-footer></footer>
+  </body>
+</html>

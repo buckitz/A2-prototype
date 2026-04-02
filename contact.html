@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakecity | Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body data-page="contact">
+    <header class="site-header">
+      <div class="site-header-inner header-wireframe">
+        <nav class="site-nav desktop-nav nav-left">
+          <a href="custom.html">Custom</a>
+          <a href="premade.html">Pre-Made</a>
+        </nav>
+        <a class="brand-mark brand-center" href="index.html">
+          <span class="brand-name">Bakecity</span>
+        </a>
+        <nav class="site-nav desktop-nav nav-right">
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="login.html" class="nav-login">Login</a>
+        </nav>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <nav class="site-nav site-nav-mobile" id="mobile-nav">
+        <a href="custom.html">Custom</a>
+        <a href="premade.html">Pre-Made</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html" class="nav-login">Login</a>
+      </nav>
+    </header>
+
+    <main class="page-shell">
+      <section class="page-hero page-hero-wireframe">
+        <div class="page-hero-copy">
+          <span class="section-chip">Contact page</span>
+          <h1>Talk to Bakecity</h1>
+          <p>Use this page for customer questions, bakery partnership interest, or support issues related to orders and schedules.</p>
+        </div>
+      </section>
+
+      <section class="contact-layout">
+        <article class="contact-card">
+          <span class="section-chip">Message form</span>
+          <h3>Send us a note</h3>
+          <form data-local-form>
+            <div class="form-grid">
+              <div class="field">
+                <label for="contact-name">Name</label>
+                <input id="contact-name" type="text" required>
+              </div>
+              <div class="field">
+                <label for="contact-email">Email</label>
+                <input id="contact-email" type="email" required>
+              </div>
+              <div class="field field-full">
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" required></textarea>
+              </div>
+            </div>
+            <div class="cta-row" style="justify-content:flex-start;">
+              <button class="primary-btn" type="submit">Send message</button>
+            </div>
+            <div class="status-text" data-form-status></div>
+          </form>
+        </article>
+
+        <article class="contact-card">
+          <span class="section-chip">Direct info</span>
+          <h3>Support and partnerships</h3>
+          <ul>
+            <li>Support email: hello@bakecity.vn</li>
+            <li>Phone: +84 28 7300 2259</li>
+            <li>Partnerships: partners@bakecity.vn</li>
+            <li>Coverage: Ho Chi Minh City, Hanoi, Da Nang, Hue</li>
+          </ul>
+          <p class="card-note">The contact page stays simple and box-based so it still matches the rest of the prototype language.</p>
+        </article>
+      </section>
+
+    </main>
+
+    <footer class="site-footer" data-site-footer></footer>
+  </body>
+</html>

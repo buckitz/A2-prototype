@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakecity | Custom Cake</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body data-page="custom">
+    <header class="site-header">
+      <div class="site-header-inner header-wireframe">
+        <nav class="site-nav desktop-nav nav-left">
+          <a href="custom.html">Custom</a>
+          <a href="premade.html">Pre-Made</a>
+        </nav>
+        <a class="brand-mark brand-center" href="index.html">
+          <span class="brand-name">Bakecity</span>
+        </a>
+        <nav class="site-nav desktop-nav nav-right">
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="login.html" class="nav-login">Login</a>
+        </nav>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <nav class="site-nav site-nav-mobile" id="mobile-nav">
+        <a href="custom.html">Custom</a>
+        <a href="premade.html">Pre-Made</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html" class="nav-login">Login</a>
+      </nav>
+    </header>
+
+    <main class="page-shell">
+      <section class="page-hero page-hero-wireframe">
+        <div class="page-hero-copy">
+          <span class="section-chip">Custom cake builder</span>
+          <h1>Customize your cake</h1>
+          <p>Pick one of four bakeries first, then only see the flavors, toppings, and design styles available from that bakery.</p>
+          <div class="page-hero-meta">
+            <span class="tag-pill">4 bakery choices</span>
+            <span class="tag-pill">Bakery-specific decor</span>
+            <span class="tag-pill">Checkout on next step</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="designer-layout">
+        <div class="preview-panel">
+          <span class="section-chip">Live cake preview</span>
+          <div class="cake-stage" id="cake-stage">
+            <div class="cake-shadow"></div>
+            <div class="cake-pedestal"></div>
+            <div class="cake-top"></div>
+            <div class="cake-layer cake-layer-top"></div>
+            <div class="cake-layer cake-layer-middle"></div>
+            <div class="cake-layer cake-layer-bottom"></div>
+            <div class="cake-drip"></div>
+            <div class="cake-topper" id="cake-topper">Bakecity</div>
+            <div class="cake-confetti" id="cake-confetti"></div>
+          </div>
+          <div class="preview-summary" id="cake-summary"></div>
+        </div>
+
+        <div class="controls-panel">
+          <div class="form-intro">
+            <span class="section-chip">Design controls</span>
+            <h2>Choose your bakery and decor</h2>
+            <p>The controls are grouped in compact blocks to match the layout direction from your sketch.</p>
+          </div>
+
+          <div class="field-block">
+            <label for="bakery-select">Bakery</label>
+            <select id="bakery-select"></select>
+          </div>
+
+          <div class="choice-group">
+            <div class="choice-label">Cake size</div>
+            <div class="choice-grid" id="size-options"></div>
+          </div>
+
+          <div class="choice-group">
+            <div class="choice-label">Flavor</div>
+            <div class="choice-grid" id="flavor-options"></div>
+          </div>
+
+          <div class="choice-group">
+            <div class="choice-label">Decor style</div>
+            <div class="choice-grid" id="design-options"></div>
+          </div>
+
+          <div class="choice-group">
+            <div class="choice-label">Toppings</div>
+            <div class="choice-grid" id="topping-options"></div>
+          </div>
+
+          <div class="field-block">
+            <label for="message-input">Cake text</label>
+            <input id="message-input" type="text" placeholder="Optional short message">
+          </div>
+
+          <div class="cta-row" style="justify-content:space-between;">
+            <button class="secondary-btn" id="custom-previous" type="button">Previous</button>
+            <button class="primary-btn" id="custom-next" type="button">Next Step</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-panel">
+        <div class="section-heading">
+          <div>
+            <span class="section-chip">Compare bakeries</span>
+            <h2>Decor options by bakery</h2>
+          </div>
+          <p>Customers can compare which bakery offers which flavors, toppings, and visual styles before committing to their cake.</p>
+        </div>
+        <div class="compare-strip" id="custom-bakery-strip"></div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer" data-site-footer></footer>
+  </body>
+</html>
