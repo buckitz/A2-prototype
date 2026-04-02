@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakecity | Bakery Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body data-page="portal">
+    <header class="site-header">
+      <div class="site-header-inner header-wireframe">
+        <nav class="site-nav desktop-nav nav-left">
+          <a href="custom.html">Custom</a>
+          <a href="premade.html">Pre-Made</a>
+        </nav>
+        <a class="brand-mark brand-center" href="index.html">
+          <span class="brand-name">Bakecity</span>
+        </a>
+        <nav class="site-nav desktop-nav nav-right">
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="login.html" class="nav-login">Login</a>
+        </nav>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <nav class="site-nav site-nav-mobile" id="mobile-nav">
+        <a href="custom.html">Custom</a>
+        <a href="premade.html">Pre-Made</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html" class="nav-login">Login</a>
+      </nav>
+    </header>
+
+    <main class="page-shell">
+      <section class="page-hero page-hero-wireframe">
+        <div class="page-hero-copy">
+          <span class="section-chip">Bakery partner portal</span>
+          <h1>Manage stock, orders, and schedule</h1>
+          <p>The controls on this page update the customer-facing bakery feed using browser storage so the MVP can demonstrate real-time changes.</p>
+          <div class="portal-meta" id="portal-stats"></div>
+          <p class="card-note" id="portal-clock"></p>
+          <div class="cta-row" style="justify-content:flex-start;">
+            <button class="secondary-btn" id="portal-reset" type="button">Reset demo data</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="portal-layout">
+        <div class="portal-grid" id="portal-grid"></div>
+        <article class="dashboard-card">
+          <span class="section-chip">Incoming orders</span>
+          <h3>Orders received through checkout</h3>
+          <div id="portal-orders"></div>
+        </article>
+      </section>
+
+    </main>
+
+    <footer class="site-footer" data-site-footer></footer>
+  </body>
+</html>
